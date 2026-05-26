@@ -65,15 +65,113 @@ int main() {
 
 
 //Bai 5
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+// int main() {
+//     int r;
+//     cout << "Nhap ban kinh: ";
+//     cin >> r;
+//     float chuvi = 2.0 * 3.14 * r;
+//     float dientich = r * r * 3.14;
+//     cout << fixed << setprecision(2) << dientich << " " << fixed << setprecision(2) << chuvi << endl;
+//     return 0;
+// }
+
+
+
+
+//Bai 6
+// #include <iostream>
+// #include <cmath>
+// #include <iomanip>
+// using namespace std;
+// int main() {
+//     long long x1,x2,y1,y2;
+//     cin >> x1 >> x2 >> y1 >> y2;
+//     long long dx = x2 - x1;
+//     long long dy = y2 - y1;
+//     double d = sqrt(dx * dx + dy * dy);
+//     cout << fixed << setprecision(2) << d << endl;
+//     return 0;
+    
+// }
+
+
+
+
+
+//Bai 7
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+// int main() {
+//     int do_c;
+//     cin >> do_c;
+//     double do_f = (do_c * 9.0 / 5.0) + 32;
+//     cout << fixed << setprecision(2) << do_f << endl;
+//     return 0;
+// }
+
+
+
+
+
+//Bai 8
+// #include <iostream>
+// #include <iomanip>
+// using namespace std;
+// int main() {
+//     long long n;
+//     cin >> n;
+//     long long Sn = 0;
+//     for (int i = 1;i <= n;i++) {
+//         Sn += i;
+//     }
+//     cout << Sn << endl;
+//     return 0;
+// }
+
+
+
+
+
+
+//Bai 9
+// #include <iostream>
+// #include <iomanip>
+// #include <cmath>
+// using namespace std;
+// int main() {
+//     int n;
+//     cin >> n;
+//     long long Sn = 0;
+//     for (int i = 1;i <= n;i++) {
+//         Sn += pow(i,2);
+//     }
+//     cout << Sn << endl;
+//     return 0;
+// }
+
+
+
+
+
+//Bai 10
 #include <iostream>
+#include <cmath>
 #include <iomanip>
 using namespace std;
 int main() {
-    int r;
-    cout << "Nhap ban kinh: ";
-    cin >> r;
-    float chuvi = 2.0 * 3.14 * r;
-    float dientich = r * r * 3.14;
-    cout << fixed << setprecision(2) << dientich << " " << fixed << setprecision(2) << chuvi << endl;
+    long long n;
+    cin >> n;
+    double Sn = 0;
+    for (int i = 1.0;i <= n;i++) {
+        Sn += 1.0/(i * (i + 1.0));
+    }
+    cout << fixed << setprecision(2) << Sn << endl;
     return 0;
 }
+
+
+
