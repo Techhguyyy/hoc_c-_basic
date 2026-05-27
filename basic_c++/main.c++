@@ -54,19 +54,19 @@
 // }
 
 
-#include <iostream>
-using namespace std;
-int main() {
-    long long a,b;
-    cout << "Nhap so nguyen a: ";
-    cin >> a;
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     long long a,b;
+//     cout << "Nhap so nguyen a: ";
+//     cin >> a;
 
-    cout << "Nhap so nguyen b: ";
-    cin >> b;
+//     cout << "Nhap so nguyen b: ";
+//     cin >> b;
 
-    cout << a / b << " " << a % b << endl;
-    return 0;
-}
+//     cout << a / b << " " << a % b << endl;
+//     return 0;
+// }
 
 
 

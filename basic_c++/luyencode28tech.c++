@@ -158,20 +158,68 @@ int main() {
 
 
 //Bai 10
+// #include <iostream>
+// #include <cmath>
+// #include <iomanip>
+// using namespace std;
+// int main() {
+//     long long n;
+//     cin >> n;
+//     double Sn = 0;
+//     for (int i = 1.0;i <= n;i++) {
+//         Sn += 1.0/(i * (i + 1.0));
+//     }
+//     cout << fixed << setprecision(2) << Sn << endl;
+//     return 0;
+// }
+
+
+
+//Bai 11
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     long long n;
+//     cin >> n;
+//     long long Sn = 0;
+//     for (int i = 2;i <= n;i+=2) {
+//         Sn = Sn + 2 * i;
+//     }
+//     cout << Sn << endl;
+//     return 0;
+// }
+
+
+
+
+
+//Bai 12
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     long long n;
+//     cin >> n;
+//     if ( n % 2 == 0) {
+//         cout << n / 2  << endl;
+//     }
+//     else {
+//         cout << -(n + 1) / 2 << endl;
+//     }
+//     return 0;
+// }
+
+
+
+
+
+//Bai 13
 #include <iostream>
-#include <cmath>
-#include <iomanip>
 using namespace std;
 int main() {
-    long long n;
-    cin >> n;
-    double Sn = 0;
-    for (int i = 1.0;i <= n;i++) {
-        Sn += 1.0/(i * (i + 1.0));
-    }
-    cout << fixed << setprecision(2) << Sn << endl;
+    int a,b;
+    cin >> a >> b;
+    int so = a - (a % b);
+    cout << so << endl;
     return 0;
+
 }
-
-
-
