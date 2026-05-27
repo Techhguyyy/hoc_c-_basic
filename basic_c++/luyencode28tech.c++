@@ -213,13 +213,95 @@ int main() {
 
 
 //Bai 13
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int a,b;
+//     cin >> a >> b;
+//     int so = a - (a % b);
+//     cout << so << endl;
+//     return 0;
+
+// }
+
+
+
+
+
+//Bai 14
+
+
+
+
+//Bai 15
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     long long n;
+//     cin >> n;
+//     if ( n % 3 == 0 && n % 5 == 0) {
+//         cout << 1 << endl;
+//     }
+//     else {
+//         cout << 0 << endl;
+//     }
+//     return 0;
+// }
+
+
+
+//Bai 16
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int namnhapvao;
+//     cin >> namnhapvao;
+//     if (namnhapvao <= 0) {
+//         cout << "Invalid" << endl;
+//     }
+//     else if ( namnhapvao % 4 == 0 && namnhapvao % 100 != 0) {
+//         cout << "Yes" << endl;
+//     }
+//     else {
+//         cout << "No" << endl;
+//     }
+//     return 0;
+
+// }
+
+
+
+
+
 #include <iostream>
 using namespace std;
 int main() {
-    int a,b;
-    cin >> a >> b;
-    int so = a - (a % b);
-    cout << so << endl;
+    int t,n;
+    cin >> t >> n;
+    if (t < 1 || t > 12 || n <= 0) {
+        cout << "Invalid" << endl;
+    }
+    else if (t == 1 || t == 3 || t == 5 || t == 7 || t == 8 || t == 10 || t == 12) {
+        cout << 31 << endl;
+    }
+    else if (t == 4 || t == 6 || t == 9 || t == 11) {
+        cout << 30 << endl;
+    }
+    else if (t == 2) {
+        if ((n % 400 == 0) || (n % 4 == 0 && n % 100 != 0)) {
+            cout << 29 << endl;
+        } else {
+            cout << 28 << endl;
+        }
+    }
+    
     return 0;
-
 }
+
+
+
+//31:1,3,5,7,8,10,12
+//28,29:2
+
+
+
