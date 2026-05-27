@@ -272,7 +272,7 @@ int main() {
 
 
 
-
+/*
 #include <iostream>
 using namespace std;
 int main() {
@@ -297,11 +297,214 @@ int main() {
     
     return 0;
 }
+*/
 
 
 
-//31:1,3,5,7,8,10,12
-//28,29:2
+//Bai 18
+/*
+#include <iostream>
+#include <cctype>
+using namespace std;
+int main() {
+    char n;
+    cin >> n;
+    if (islower(n)) {
+        cout << "YES" << endl;
+    } 
+    else {
+        cout << "NO" << endl;
+    }
+    return 0;
+}
+*/
+
+
+
+
+
+//Bai 19
+/*
+#include <iostream>
+#include <cctype>
+using namespace std;
+int main() {
+    char n;
+    cin >> n;
+    if (isupper(n)) {
+        cout << "YES" << endl;
+    }
+    else {
+        cout << "NO" << endl;
+    }
+    return 0;
+}
+*/
+
+
+
+
+
+
+
+//Bai 20
+/*
+#include <iostream>
+#include <cctype>
+using namespace std;
+int main() {
+    char n;
+    cin >> n;
+    if (isalpha(n)) {
+        cout << "YES" << endl;
+    }
+    else {
+        cout << "NO" << endl;
+    }
+    return 0;
+}
+*/
+
+
+
+
+
+
+//Bai 21
+/*
+#include <iostream>
+#include <cctype>
+using namespace std;
+int main() {
+    char n;
+    cin >> n;
+    if (isdigit(n)) {
+        cout << "YES" << endl;
+    }
+    else {
+        cout << "NO" << endl;
+    }
+    return 0;
+
+}
+*/
+
+
+
+
+//Bai 22
+/*
+#include <iostream>
+#include <cctype>
+using namespace std;
+int main() {
+    char n;
+    cin >> n;
+    if (isupper(n)) {
+        cout << (char)tolower(n) << endl;
+    }
+    else {
+        cout << n << endl;
+    }
+    return 0;
+}
+*/
+
+
+
+
+//Bai 23
+#include <iostream>
+#include <cctype>
+using namespace std;
+int main() {
+    char n;
+    cin >> n;
+    if (islower(n)) {
+        cout << (char)toupper(n) << endl;
+    }
+    else {
+        cout << n << endl;
+    }
+    return 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
