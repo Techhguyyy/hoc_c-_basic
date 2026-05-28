@@ -414,6 +414,7 @@ int main() {
 
 
 //Bai 23
+/*
 #include <iostream>
 #include <cctype>
 using namespace std;
@@ -429,6 +430,47 @@ int main() {
     return 0;
     
 }
+*/
+
+
+
+
+
+//Bai 24
+#include <iostream>
+#include <cctype>
+using namespace std;
+int main() {
+    char n;
+    cin >> n;
+    if (!isalpha(n)) {
+        cout << "Invalid" << endl;
+    }
+    else {
+        char lowerN = tolower(n);
+        if (lowerN == 'z') {
+            cout << 'a' << endl;
+        } else {
+            cout << (char)(lowerN + 1) << endl;
+        }
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
