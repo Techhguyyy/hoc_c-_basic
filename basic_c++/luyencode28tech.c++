@@ -437,6 +437,7 @@ int main() {
 
 
 //Bai 24
+/*
 #include <iostream>
 #include <cctype>
 using namespace std;
@@ -444,30 +445,71 @@ int main() {
     char n;
     cin >> n;
     if (!isalpha(n)) {
-        cout << "Invalid" << endl;
+        cout << "INVALID" << endl;
     }
     else {
         char lowerN = tolower(n);
         if (lowerN == 'z') {
-            cout << 'a' << endl;
-        } else {
+            cout << "a" << endl;
+        }
+        else {
             cout << (char)(lowerN + 1) << endl;
+        }
+      }
+      return 0;
+}
+
+*/
+
+
+
+//Bai 25
+/*
+#include <iostream>
+#include <cctype>
+using namespace std;
+int main() {
+    int a,b,c;
+    cin >> a >> b >> c;
+    if (a + b > c && a + c > b && b + c > a) {
+        cout << "YES" << endl;
+    }
+    else {
+        cout << "NO" << endl;
+    }
+    return 0;
+}
+*/
+
+
+
+
+//Bai 26
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int a,b,c;
+    cin >> a >> b >> c;
+    if ( a <= 0 || b <= 0 || c <= 0 || a + b <= c || a + c <= b || b + c <= a) {
+        cout << "INVALID" << endl;
+    }
+    else {
+        if (a == b && b == c) {
+            cout << "1" << endl;
+        }
+        else if (a == b || a == c || b == c) {
+            cout << "2" << endl;
+        }
+        else if (pow(a,2) == pow(b,2) + pow(c,2) || pow(b,2) == pow(a,2) + pow(c,2) || pow(c,2) == pow(b,2) + pow(a,2) ) {
+            cout << "3" << endl;
+        }
+        else {
+            cout << "4" << endl;
         }
     }
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
