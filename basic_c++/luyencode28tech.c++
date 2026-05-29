@@ -485,6 +485,7 @@ int main() {
 
 
 //Bai 26
+/*
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -510,6 +511,59 @@ int main() {
     }
     return 0;
 }
+*/
+
+
+
+
+//Bai 27
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+// int main() {
+//     int n;
+//     cin >> n;
+//     int nam = n / 365;
+//     int ngay_con_lai = n % 365;
+//     int tuan = ngay_con_lai / 7;
+//     int ngay = ngay_con_lai % 7;
+//     cout << nam << " " << tuan << " " << ngay << endl;
+//      return 0;
+// }
+
+
+
+
+
+
+
+//Bai 28
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+int main() {
+    float a,b,c,x1,x2;
+    cin >> a >> b >> c;
+    float delta = b * b - (4.0 * a * c);
+    if (delta > 0) {
+        x1 = (-b + sqrt(delta)) / (2.0 * a);
+        x2 = (-b - sqrt(delta)) / (2.0 * a);
+        cout << fixed << setprecision(2) << x1 << " " << fixed << setprecision(2) << x2 << endl;
+    }
+    else if (delta == 0) {
+         x1 == -b / (2.0 * a);
+        cout << fixed << setprecision(2) << x1 << endl;
+    }
+    else if (delta < 0) {
+        cout << "NO" << endl;
+    }
+    return 0;
+
+}
+
+
+
 
 
 
