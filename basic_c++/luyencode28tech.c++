@@ -538,6 +538,7 @@ int main() {
 
 
 //Bai 28
+/*
 #include <iostream>
 #include <cmath>
 #include <iomanip>
@@ -561,7 +562,25 @@ int main() {
     return 0;
 
 }
+*/
 
+
+
+
+//Bai 29
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    float a,b;
+    cin >> a >> b;
+    int dem = 0;
+    for ( int i = ceil(a);i <= floor(b);i++) {
+        dem++;
+    }
+    cout << dem << endl;
+    return 0;
+}
 
 
 
