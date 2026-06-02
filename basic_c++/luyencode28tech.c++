@@ -568,6 +568,7 @@ int main() {
 
 
 //Bai 29
+/*
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -581,7 +582,27 @@ int main() {
     cout << dem << endl;
     return 0;
 }
+*/
 
+
+
+
+
+//Bai 30
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int a,b,c;
+    cin >> a >> b >> c;
+    if ((a / b) == c || (b / c) == a || (c / a) == b) {
+        cout << "/" << endl;
+    }
+    else {
+        cout << "NOSOL" << endl;
+    }
+    return 0;
+}
 
 
 
