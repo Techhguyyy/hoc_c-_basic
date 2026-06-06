@@ -589,20 +589,66 @@ int main() {
 
 
 //Bai 30
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+// int main() {
+//     int a,b,c;
+//     cin >> a >> b >> c;
+//     if ((a / b) == c || (b / c) == a || (c / a) == b) {
+//         cout << "/" << endl;
+//     }
+//     else {
+//         cout << "NOSOL" << endl;
+//     }
+//     return 0;
+// }
+
+
+
+
+
+
+//Bai 31
+/*
 #include <iostream>
 #include <cmath>
 using namespace std;
 int main() {
-    int a,b,c;
-    cin >> a >> b >> c;
-    if ((a / b) == c || (b / c) == a || (c / a) == b) {
-        cout << "/" << endl;
+    float a,b,c,d;
+    cin >> a >> b >> c >> d;
+    float trungbinh = (a * 1.0 + b * 1.0 + c * 2.0  + d * 3.0) / 7.0;
+    if (trungbinh >= 8.0) {
+        cout << "GIOI" << endl;
     }
-    else {
-        cout << "NOSOL" << endl;
+    else if (trungbinh < 8.0 && trungbinh >= 6.5) {
+        cout << "KHA" << endl;
+    }
+    else if (trungbinh < 6.5 && trungbinh >= 5.0) {
+        cout << "TRUNG BINH" << endl;
+    }
+    else if (trungbinh < 5) {
+        cout << "YEU" << endl;
     }
     return 0;
 }
+*/
+
+
+
+//Bai 32
+// #include <iostream>
+// #include <algorithm>
+// using namespace std;
+// int main() {
+//     long long a[5];
+//     for (int i = 0;i < 5;i++) {
+//         cin >> a[i];
+//     }
+//     sort(a,a + 5);
+//     cout << a[1] << endl;
+//     return 0;
+// }
 
 
 
@@ -612,6 +658,42 @@ int main() {
 
 
 
+//                                           Bai tap BUOI 2 
+//Bai 1
+/*
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int s1,s2,s3;
+    cin >> s1 >> s2 >> s3;
+    long long tich = (long long) s1 * s2 * s3;
+    long long abc = sqrt(tich);
+    int a = abc / s1;
+    int b = abc / s2;
+    int c = abc / s3;
+    long long sum = 4 * (a + b + c);
+    cout << sum << endl;
+    return 0;
+}
+*/
+
+
+
+
+
+
+//Bai 2
+#include <iostream>
+using namespace std;
+int main() {
+    int m,n;
+    cin >> m >> n;
+    int tong_o = m * n;
+    int maxdomino = (m * n) / 2;
+    cout << maxdomino << endl;
+    return 0;
+}
 
 
 
