@@ -684,6 +684,7 @@ int main() {
 
 
 //Bai 2
+/*
 #include <iostream>
 using namespace std;
 int main() {
@@ -692,6 +693,41 @@ int main() {
     int tong_o = m * n;
     int maxdomino = (m * n) / 2;
     cout << maxdomino << endl;
+    return 0;
+}
+*/
+
+
+
+
+//Bai 3
+/*
+#include <iostream> 
+#include <cmath>
+using namespace std;
+int main() {
+    int n,m,a;
+    cin >> n >> m >> a;
+    long long chieudai = (n + a - 1) / a;   
+    long long chieurong = (m + a - 1) / a;
+    long long tongsovien = chieudai * chieurong;
+    cout << tongsovien << endl;
+    return 0;
+}
+*/
+
+
+
+//bai 4
+#include <iostream>
+using namespace std;
+int main() {
+    long long a,b,k;
+    cin >> a >> b >> k;
+    long long solanphai = (k + 1) / 2;
+    long long solantrai = k / 2;
+    long long vi_tri = solanphai * a - solantrai * b;
+    cout << vi_tri << endl;
     return 0;
 }
 
